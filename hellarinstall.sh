@@ -65,7 +65,7 @@ echo -e "masternode=1\nmasternodeprivkey=${MNGENKEY}\nmasternodeblsprivkey=${BLS
 sudo systemctl restart hellar
 
 echo "Installing sentinel engine, please standby!"
-sudo gitclone https://github.com/ivansib/sentinel.git /home/hellar/hellar/
+sudo gitclone https://github.com/Hellarpay/sentinel.git /home/hellar/hellar/
 sudo chown -R hellar:hellar /home/hellar/sentinel/
 cd /home/hellar/sentinel/
 echo -e "hellar_conf=/user/hellar/.hellar/hellar.conf" | sudo tee -a /home/hellar/sentinel/sentinel.conf
